@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup now</title>
+    <script>
+        function signup()
+        {
+            var n1=document.getElementById("nm").value;
+            var l1=document.getElementById("ln").value;
+            var age1=document.getElementById("age").value;
+            var mn1=document.getElementById("mn").value;
+            var email1=document.getElementById("email").value;
+            var pass1=document.getElementById("pass").value;
+
+
+            localStorage.setItem("n2",n1)
+            localStorage.setItem("l2",l1)
+            localStorage.setItem("age2",age1)
+            localStorage.setItem("m2",mn1)
+            localStorage.setItem("email2",email1)
+            localStorage.setItem("pass2",pass1)
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div>
+    <form >
+        <label >Name</label>
+        <input type="text" id="nm"><br>
+        <label for="">Last Name</label>
+        <input type="text" id="ln"><br>
+        <label for="">Enter Your Age</label>
+        <input type="text" id="age"><br>
+        <label for="">Enter Your Mobile Number</label>
+        <input type="text" id="mn"><br>
+        <label for="">Create your user name</label>
+        <input type="text" id="email"><br>
+        <label for="">Create your password</label>
+        <input type="password" id="pass" ><br>
+        <button type="signup" onclick="signup()">signup</button>
+
+    </form>
+</div>
+</body>
+</html>

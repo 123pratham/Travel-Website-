@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function login()
+        {
+            var a=document.getElementById("user").value;
+            var b=document.getElementById("passw").value;
+
+            var c=localStorage.getItem("email2");
+            var d=localStorage.getItem("pass2");
+
+        if(a==c && b==d)
+            {
+             window.open("index.html");
+            }
+        else
+            {
+            alert("invalid input");
+            }
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <img src="" alt="">
+    <form>
+        <label>user name</label>
+        <input type="text"id="user">
+        <label>password</label>
+        <input type="password"id="passw">
+        <button onclick="login()">login</button>
+        </form>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script>
+        function signup() {
+            var name1 = document.getElementById("nm").value;
+            var address1 = document.getElementById("adr").value;
+            var mobile1 = document.getElementById("mb").value;
+            var user1 = document.getElementById("un").value;
+            var password1 = document.getElementById("pass").value;
+
+            localStorage.setItem("name2",name1)
+            localStorage.setItem("address2",address1)
+            localStorage.setItem("mobile2",mobile1)
+            localStorage.setItem("user2",user1)
+            localStorage.setItem("password2",password1)
+
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fm">
+    <form action="">
+        
+        <label for="">Name:</label>
+        <input type="text" name="Name:" id="nm"><br>
+        <label for="">Last Name:</label>
+        <input type="text" name="Last Name" id="lnm"><br>
+        <label for="">Mabile:</label><br>
+        <input type="text" name="mobile" id="mb">
+        <label for="">Address:</label>
+        <input type="text" name="Address" id="adr"><br>
+        <label for="">User Name:</label>
+        <input type="text" name="user name" id="un"><br>
+        <label for="">Password:</label>
+        <input type="password" name="" id="pass"><br>
+        <button onclick="signup()">SignUp</button>
+    </form>
+    </div>
+</body>
+</html>
